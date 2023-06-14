@@ -30,7 +30,7 @@
                         <a class="nav-link" href="#projects">Proyek Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Hubungi kami</a>
+                        <a class="nav-link" href="#feedback">Masukan Anda</a>
                     </li>
                 </ul>
             </div>
@@ -89,7 +89,7 @@
             <div class="row ">
                 <div class="col-md-4 mb-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/1.jpg" class="card-img-top" alt="...">
+                        <img src="img/1.jpg" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quisquam
                                 tenetur eos possimus provident odio veritatis expedita est deserunt laborum, a excepturi
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/2.jpg" class="card-img-top" alt="...">
+                        <img src="img/2.jpg" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia,
                                 aperiam rerum et doloribus consectetur omnis quisquam earum autem ipsa voluptas
@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/3.jpg" class="card-img-top" alt="...">
+                        <img src="img/3.jpg" class="card-img-top">
                         <div class="card-body">
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
                                 maxime nesciunt quam corporis, consequatur sunt harum temporibus doloremque quos
@@ -129,29 +129,37 @@
     <!-- Akhir Projects -->
 
     <!-- Kontak -->
-    <section id="contact">
+    <section id="feedback">
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <h2>Kontak Kami</h2>
+                    <h2>Masukan Anda</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <form>
+                    <div class="alert alert-primary alert-dismissible fade show d-none my-alert" role="alert">
+                        <strong>Masukan Anda</strong> Telah Kami Terima
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <form name="contact-form">
                         <div class="mb-3">
                             <label for="name" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="name">
+                            <input name="nama" type="text" class="form-control" id="name" aria-describedby="name">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Alamat Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="email">
+                            <input name="email" type="email" class="form-control" id="email" aria-describedby="email">
                         </div>
                         <div class="mb-3">
-                            <label for="textarea" class="form-label">Masukan Pesan</label>
-                            <textarea class="form-control" id="textarea" rows="3"></textarea>
+                            <label for="pesan" class="form-label">Masukan Pesan</label>
+                            <textarea name="pesan" class="form-control" id="pesan" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+                        <button class="btn btn-primary d-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm btn-loading" role="status" aria-hidden="true"></span>
+                            Loading...
+                          </button>
                     </form>
                 </div>
             </div>
@@ -169,11 +177,12 @@
         <p class="text-white">Created With <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
                 class="bi bi-heart-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
-                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
             </svg> by <a class="text-white" href="https://github.com/nopendro34">Nopendro Pakpahan</a></p>
     </footer>
     <!-- Akhir Footer -->
     <script src="src/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
